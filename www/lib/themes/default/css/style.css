@@ -1,0 +1,95 @@
+body { background-color: #fff; font-family: Verdana, Geneva, sans-serif; font-size: 1em; margin: 0 auto; width:100%; 
+background-size:100% 100%;
+background-image:url('images/fondo.png'); }
+
+#container {  width:960px; height:513px; padding-top:80px; margin:0 auto; }
+#content-image { width:100%; height:100%; float:left; }
+#header { float:right; margin-top:-75px; width:auto; height:90px; padding:5px;}
+#header a { margin-left:20px; }
+#home img {  float:left; margin:25px 0 0 50px; }
+#content { margin:0 auto; margin-top:30px; width:800px; height:450px; border:1px solid #fff; background: rgba(0, 0, 0, 0.5); }
+
+#description { float:left; margin:35px 0 0 10px; width:270px; font-size:14px; color:#ff9927; }
+#menu-principal { float:left; margin-top:30px; width:450px; background-color:#241f17; height:80px; background:rgba(0, 0, 0, 0.5); border-top:1px solid #fff; border-bottom:1px solid #fff; }
+#head-feedback { float:left; padding-bottom:5px; margin:20px 0 0 20px; width:750px; border-bottom:2px solid #fff; color:#fff; font-size:18px; }
+
+#feedback { float:left; width:700px; height:350px; margin-left:50px; }
+#feedback p { float:left; margin:15px 0 0 50px; width:100%; color:#fff; }
+#feedback input { border:none; margin:none; margin-top:4px; width:550px; background-color:transparent; border-bottom:1px solid #fff; color:#fff; }
+#feedback textarea { margin:none; background-color:transparent; width:550px; height:100px; color:#fff; }
+#feedback .submit { border:1px solid #fff; font-size:17px; width:200px; margin:-35px 0 0 200px; display:none; } 
+
+.menu-ul { float:left; padding-top:10px; list-style:none; display:inline; }
+.element-menu { float:left; margin-left:30px; list-style:none; display:inline; border-right:1px solid #fff; }
+.element-menu a { float:left; margin-right:30px; text-decoration:none; color:#fff; font-size:20px; }
+.element-menu a:hover { color:#ff9927; }
+
+#visitas { float:left; width:790px; height:325px; overflow-y:auto;  overflow-x:hidden; }
+.visita { float:left; margin:10px 0 0 50px; width:690px; height:auto; padding-bottom:30px; color:#fff; }
+.visita .name { float:left; width:100%; padding-bottom:7px; font-size:16px; }
+.visita .comment { float:left; width:100%; margin-left:10px; padding-bottom:5px; font-style:italic; font-size:14px;}
+.visita .date { float:right; }
+.events .visita { padding-bottom:10px !important; }
+.events { height:325px !important; }
+.events { height:300px !important; }
+.events2 { height:325px !important; }
+
+#events-past { float:left; margin-left:50px; padding-bottom:25px; }
+#events-past span { cursor:pointer; float:left; margin:6px 0 0 8px; text-decoration:none; font-size:15px; color:#fff; font-weight:bold; }
+#events-past span:hover { color:#ff9927; }
+.arrow-right { float:left; width:18px; height:21px; background-image:url('images/eventos_flecha.png'); }
+.rotate{ -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); }
+
+#new-visit { display:none; position:relative; z-index:2; font-size:18px; float:left; width:700px; height:210px; margin:-200px 0 0 30px; border:1px solid #4a4a4a; background-color:#000; background:rgba(0, 0, 0, 0.9) }
+#new-visit span { float:left; margin:15px 0 0 8px; width:70px; color:#fff; }
+#new-visit input { border:none; margin:none; margin:15px 0 0 8px; width:550px; background-color:transparent; border-bottom:1px solid #fff; color:#fff; }
+#new-visit textarea { margin:none; background-color:transparent; width:650px; margin:45px 0 0 -50px; height:100px; color:#fff; }
+.visit-block { float:left; width:100%; }
+
+#gallery { float:left; padding-bottom:60px; }
+#gallery img { border:1px solid #fff; cursor:pointer; }
+#gallery img:hover { border:1px solid #ff9927; }
+.title-image { float:left; padding:15px 0 0 25px; width:325px; color:#fff; font-size:16px; font-weight:bold; }
+.active-image { border:1px solid #ff9927 !important; }
+
+#menu-footer { float:right; margin-top:10px; width:100%; height:55px; background:rgba(0, 0, 0, 0.5); border-top:1px solid #fff; border-bottom:1px solid #fff; }
+.menu-footer { float:right; list-style:none; display:inline; }
+.footer-menu { float:rifght; margin-left:30px; list-style:none; display:inline; border-right:1px solid #fff; }
+.footer-menu a { float:rifght; margin-right:30px; text-decoration:none; color:#fff; font-size:20px; }
+.footer-menu a:hover { color:#ff9927; }
+
+.feedback-menu { margin-top:-5px !important; }
+
+#footer { float:right; margin:5px 90px 0 0; color:#fff; font-size:14px; }
+
+.twitter { float:right; width:68px; height:57px; text-decoration:none; background-image:url('images/icono_twitter_off.png'); text-indent:-999px; overflow:hidden; }
+.twitter:hover { background-image:url('images/icono_twitter_on.png'); }
+.facebook { float:right; width:28px; height:53px; text-decoration:none; background-image:url('images/icono_fb_off.png'); text-indent:-999px; overflow:hidden; }
+.facebook:hover { background-image:url('images/icono_fb_on.png'); }
+.feedback { float:right; width:72px; height:41px; text-decoration:none; background-image:url('images/icono_correo_off.png'); text-indent:-999px; overflow:hidden; }
+.feedback:hover { width:72px; height:47px; background-repeat:no-repeat; background-image:url('images/icono_correo_on.png'); }
+.border-none { border:none !important; }
+.first { margin-left:5px !important; }
+.bold { font-weight:bold; }
+.margin-10 { margin-top:-10px !important; }
+.margin-10 { margin-top:0px !important; }
+.margin-20 { margin-top:-20px !important; }
+.margin30 { margin-top:30px !important; }
+.margin45 { margin-top:45px !important; }
+.height70 { height:70px !important; }
+.margin0 { margin-top:0px !important; }
+.jspContainer { border:none; }
+
+.past-title { float:left; margin:10px 0 0 50px; color:#fff; font-weight:bold; }
+.visit-gallery { float:left; width:100%; height:auto; margin-top:20px; }
+.thumb-gallery { float:left; width:330px; height:auto; }
+.thumb-gallery img { float:left; margin: 0 0 0 25px !important; border:1px solid #fff; cursor:pointer; }
+.img-gallery { float:left; width:100px; height:auto;  }
+.image-gallery { float:left; margin:-15px 0 0 150px !important; }
+.coming-gallery { float:left; margin:-35px 0 0 450px !important; }
+.return-events { float:left; color:#fff; font-size:15px; font-weight:bold; cursor:pointer; margin:20px 0 0 50px; }
+.return-events:hover { color:#ff9927; }
+
+#close { float:right; margin:-15px -10px 0 0; width:27px; height:27px; cursor:pointer; background-image:url('images/close.png')}
+#large-image { float:left; margin:30px 0 0 290px; }
+#large-image img { border:1px solid #FF9927; } 
