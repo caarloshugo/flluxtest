@@ -34,7 +34,17 @@
 <div id="gallery-mini">
 	<div id="large-image"></div>
 	
-	<div id="menu-footer" class="margin45 height70">
-		
+	<div id="menu-footer" class="margin45 height70 sc-gallery">
+		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato3.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato3.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<span id="return-gallery">Regresar</span>
 	</div>
 </div>

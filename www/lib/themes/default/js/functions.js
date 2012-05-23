@@ -2,8 +2,14 @@ $(document).ready( function() {
 	$("#home-past-events").hide();
 	$("#gallery-mini").hide();
 	
+	$('#return-gallery').click( function() {
+		$('#gallery-mini').fadeOut('slow', function() {
+			$('#gallery-div').fadeIn();
+		});
+	});
+	
 	$('#cpast-events').click( function() {
-		$('#home-events').fadeOut('slow', function() {
+		$('#home-events').fadeOutreturn-gallery('slow', function() {
 			$("#home-past-events").fadeIn();
 			$('.scroll-pane').jScrollPane( {
 				showArrows: false,
@@ -47,6 +53,16 @@ $(document).ready( function() {
 		});
 	});
 	
+	$('.sc-gallery > img').click( function() {
+		var rel      = $(this).attr('rel');
+		var altImg   = $(this).attr('alt');
+		var titleImg = $(this).attr('title');
+		
+		$('#large-image').fadeOut('slow', function() {
+			$('#large-image').html('<img src="' + rel + '" alt="' + altImg + '" title="' + titleImg + '"/>');
+			$('#large-image').fadeIn();
+		});
+	});
 	
 	$('#home').click( function() {
 		$('#new-visit').fadeOut();
