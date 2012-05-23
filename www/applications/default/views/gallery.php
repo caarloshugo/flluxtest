@@ -32,7 +32,9 @@
 </div>
 
 <div id="gallery-mini">
+	<div id="left-arrow"></div>
 	<div id="large-image"></div>
+	<div id="right-arrow"></div>
 	
 	<div id="menu-footer" class="margin45 height70 sc-gallery">
 		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>

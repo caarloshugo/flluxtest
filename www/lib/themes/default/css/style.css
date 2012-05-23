@@ -93,6 +93,8 @@ background-image:url('images/fondo.png'); }
 .sc-gallery span { float:left; color:#fff; font-size:16px; margin:22px 0 0 26px; cursor:pointer; }
 .sc-gallery span:hover { color:#ff9927; }
 
-#close { float:right; margin:-15px -10px 0 0; width:27px; height:27px; cursor:pointer; background-image:url('images/close.png')}
+#close { float:right; margin:-15px -10px 0 0; width:27px; height:27px; cursor:pointer; background-image:url('images/close.png'); }
 #large-image { float:left; margin:30px 0 0 290px; }
 #large-image img { border:1px solid #ff9927; } 
+#left-arrow { float:left; width:58px; height:53px; margin:160px 0 0 -60px; cursor:pointer; background-image:url('images/galeria_i_flecha_off.png'); }
+#right-arrow { float:right; width:40px; height:67px; cursor:pointer; background-image:url('images/galeria_d_flecha_off.png'); }
