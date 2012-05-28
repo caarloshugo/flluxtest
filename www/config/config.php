@@ -9,7 +9,7 @@ if(!defined("_access")) {
 /**
  * Website
  */
-$ZP["webURL"] 	    = "http://muucms.com/fllux";
+$ZP["webURL"] 	    = "http://local.fllux.com";
 $ZP["webName"] 	    = "Fllux";
 $ZP["webTheme"]     = "default";
 $ZP["webSituation"] = "Active";

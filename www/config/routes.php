@@ -35,4 +35,18 @@ $routes = array(
 			"method"	  => "feedback",
 			"params"	  => array()
 		),
+	4 => array(
+			"pattern"	  => "/^admin/",
+			"application" => "admin",
+			"controller"  => "admin",
+			"method"	  => "login",
+			"params"	  => array()
+		),
+	4 => array(
+			"pattern"	  => "/^logout/",
+			"application" => "admin",
+			"controller"  => "admin",
+			"method"	  => "logout",
+			"params"	  => array()
+		)
 );

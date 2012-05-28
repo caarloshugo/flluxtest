@@ -28,19 +28,22 @@
 		<div class="topbar">
 			<div class="fill">
 				<div class="container">
-					<a class="brand" href="#">ZanPHP.com</a>
+					<a class="brand" href="#">fllux.com</a>
 					
 					<ul class="nav">
 						<li class="active"><a href="#">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#contact">Contact</a></li>
+						<?php print (SESSION("ZanUser")) ? '<li><a href="' . path("logout"). '">Logout</a></li>' : NULL; ?>
 					</ul>
-          
-					<form action="#" class="pull-right">
-						<input class="input-small" type="text" placeholder="Username">
-						<input class="input-small" type="password" placeholder="Password">
-						<button class="btn" type="submit">Sign in</button>
-					</form>
+					
+					<?php if(!SESSION("ZanUser")) { ?>
+						<form action="<?php print path("admin");?>" class="pull-right" method="post" >
+							<input class="input-small" type="text" name="username" placeholder="Username">
+							<input class="input-small" type="password" name="password" placeholder="Password">
+							<button class="btn" value="connect" name="connect" type="submit">Sign in</button>
+						</form>
+					<?php } ?>
 				</div>
 			</div>
 		</div>
