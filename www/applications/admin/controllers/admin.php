@@ -13,9 +13,7 @@ class Admin_Controller extends ZP_Controller {
 	}
 	
 	public function index() {
-		$vars["view"] = $this->view("home", TRUE);
-		
-		$this->render("content", $vars);
+		$this->login();
 	}
 	
 	public function login() {
