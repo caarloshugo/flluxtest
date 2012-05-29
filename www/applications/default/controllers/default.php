@@ -31,12 +31,21 @@ class Default_Controller extends ZP_Controller {
 	}
 
 	public function events() {
+		if(POST("send")) {
+			
+		}
+		
 		$vars["view"] = $this->view("events", TRUE);
 		
 		$this->render("content", $vars);
 	}
 
 	public function feedback() {
+		if(POST("send")) {
+			$this->Default_Model = $this->model("Default_Model");
+			$vars["alert"]       = $this->Default_Model->send();
+		}
+		
 		$vars["view"] = $this->view("feedback", TRUE);
 		
 		$this->render("content", $vars);

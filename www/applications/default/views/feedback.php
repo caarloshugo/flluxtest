@@ -1,7 +1,13 @@
+<?php if(isset($alert)) { ?>
+	<script>
+		alert("<?php print $alert;?>");
+	</script>
+<?php } ?>
+
 <div id="home">
 <span id="head-feedback">Escr&iacute;beme</span>
 <div id="feedback">
-	<form action="" method="post">
+	<form action="<?php print path("contacto");?>" method="post">
 		<p>
 			<span>* Nombre</span><br />
 			<input class="input" type="text" name="name" id="input-name"/>
@@ -9,7 +15,7 @@
 		
 		<p>
 			<span>* Correo</span><br />
-			<input class="input" type="text" name="emial" id="input-email"/>
+			<input class="input" type="text" name="email" id="input-email"/>
 		</p>
 		
 		<p>

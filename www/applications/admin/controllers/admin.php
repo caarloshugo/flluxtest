@@ -38,10 +38,4 @@ class Admin_Controller extends ZP_Controller {
 		
 		$this->render("content", $vars);
 	}
-
-	public function feedback() {
-		$vars["view"] = $this->view("feedback", TRUE);
-		
-		$this->render("content", $vars);
-	}
 }
