@@ -25,6 +25,12 @@ class Default_Controller extends ZP_Controller {
 	}
 
 	public function visits() {
+		
+		if(POST("send")) {
+			$this->Default_Model = $this->model("Default_Model");
+			$vars["alert"]       = $this->Default_Model->sendVisit();
+		}
+		
 		$vars["view"] = $this->view("visits", TRUE);
 		
 		$this->render("content", $vars);
@@ -43,7 +49,7 @@ class Default_Controller extends ZP_Controller {
 	public function feedback() {
 		if(POST("send")) {
 			$this->Default_Model = $this->model("Default_Model");
-			$vars["alert"]       = $this->Default_Model->send();
+			$vars["alert"]       = $this->Default_Model->sendFeedback();
 		}
 		
 		$vars["view"] = $this->view("feedback", TRUE);

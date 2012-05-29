@@ -72,11 +72,13 @@ $(document).ready( function() {
 	$("#close").click( function() {
 		$('#new-visit').fadeOut();
 		$('#add-comment').html("+ Agregar comentario");
+		$('#add-comment').attr("onclick", 'return false;'); 
 	});
 	
 	$('#add-comment').click( function() {
 		$('#new-visit').fadeIn();
 		$('#add-comment').html("Enviar comentario");
+		$('#add-comment').attr("onclick", 'document.formVisit.submit();'); 
 		$('#input-name').focus();
 		return false;
 	});

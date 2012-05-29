@@ -13,7 +13,7 @@ class Default_Model extends ZP_Model {
 		$this->helpers();
 	}
 	
-	public function send() {
+	public function sendFeedback() {
 		$this->Email = $this->core("Email");
 		$this->Email->setLibrary("PHPMailer");
 		
@@ -48,5 +48,9 @@ class Default_Model extends ZP_Model {
 									<p><strong>'. __(_("Message")) .':</strong> <br /> ' . POST("message", "decode", FALSE) . '</p>									
 									';
 		$this->Email->send();
+	}
+	
+	public function sendVisit() {
+		
 	}
 }
