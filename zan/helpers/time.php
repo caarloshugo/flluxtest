@@ -388,8 +388,8 @@ function now($format, $hour = FALSE, $language = NULL) {
 		return date("d") . _sh . date("m") . _sh . date("y");
 	} elseif($format === 2) {					
 		$day   = __(_(date("l"))); 
-		$month = __(_(date("F")));			
-				
+		$month = __(_(date("F")));
+		
 		if($language === "English") {
 			return "$day, $month ". date("d") .", ". date("Y");
 		} elseif($language === "Spanish") {
@@ -409,6 +409,9 @@ function now($format, $hour = FALSE, $language = NULL) {
 		return date("d/m/Y H:i:s", $hour);
 	} elseif($format === 7) {
 		return date("Y-m-d H:i:s");
+	} elseif($format === 8) {
+		setlocale(LC_ALL, "es_ES");
+		return strftime("%A %e %B %Y");
 	} else {
 		return date("d/m/Y", $format);				  
 	}

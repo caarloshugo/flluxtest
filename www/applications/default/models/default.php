@@ -9,7 +9,7 @@ if(!defined("_access")) {
 class Default_Model extends ZP_Model {
 	
 	public function __construct() {
-		//$this->Db = $this->db();
+		$this->Db = $this->db();
 		$this->helpers();
 	}
 	
@@ -51,6 +51,28 @@ class Default_Model extends ZP_Model {
 	}
 	
 	public function sendVisit() {
-		
+		if(POST("name") and POST("comment")) {
+			$data = array( 
+				"Name"       => POST("name"),
+				"Comment"    => POST("comment"),
+				"Start_Date" => now(4),
+				"Text_Date"  => now(8, FALSE, "Spanish")
+			);
+			
+			$insert = $this->Db->insert("visits", $data);
+			
+			return ($insert) ? "Your message has been sent successfully, thank you very much!" : FALSE;
+		} else {
+			
+			return FALSE;
+		}
+	}
+	
+	public function getVisits() {
+		return $this->Db->findBy("State", "Active", "visits");
+	}
+	
+	public function getEvents() {
+		return $this->Db->findBy("State", "Active", "events");
 	}
 }

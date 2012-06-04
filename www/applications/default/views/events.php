@@ -2,24 +2,12 @@
 	<div id="home">
 		<span id="head-feedback">Eventos recientes y por venir</span>
 		<div id="visitas" class="scroll-pane events">
-			<div class="visita">
-				<span class="name bold">12/12/2012 Nombre del evento (Lugar del evento)</span>
-				<span class="comment">"Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba"</span>
-			</div>
-			<div class="visita">
-				<span class="name bold">12/12/2012 Nombre del evento (Lugar del evento)</span>
-				<span class="comment">"Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba"</span>
-			</div>
-			
-			<div class="visita">
-				<span class="name bold">12/12/2012 Nombre del evento (Lugar del evento)</span>
-				<span class="comment">"Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba"</span>
-			</div>
-			
-			<div class="visita">
-				<span class="name bold">12/12/2012 Nombre del evento (Lugar del evento)</span>
-				<span class="comment">"Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba"</span>
-			</div>
+			<?php foreach($events as $event) { ?>
+				<div class="visita">
+					<span class="name bold"><?php print $event["Text_Date"];?> <?php print $event["Title"];?> (<?php print $event["Location"];?>)</span>
+					<span class="comment">"<?php print $event["Content"];?>"</span>
+				</div>
+			<?php } ?>
 		</div>
 		
 		<div id="events-past">

@@ -25,23 +25,23 @@ class Default_Controller extends ZP_Controller {
 	}
 
 	public function visits() {
+		$this->Default_Model = $this->model("Default_Model");
 		
-		if(POST("send")) {
-			$this->Default_Model = $this->model("Default_Model");
+		if(POST("name")) {
 			$vars["alert"]       = $this->Default_Model->sendVisit();
 		}
 		
-		$vars["view"] = $this->view("visits", TRUE);
+		$vars["visits"] = $this->Default_Model->getVisits();
+		$vars["view"]   = $this->view("visits", TRUE);
 		
 		$this->render("content", $vars);
 	}
 
 	public function events() {
-		if(POST("send")) {
-			
-		}
+		$this->Default_Model = $this->model("Default_Model");
 		
-		$vars["view"] = $this->view("events", TRUE);
+		$vars["events"] = $this->Default_Model->getEvents();
+		$vars["view"]   = $this->view("events", TRUE);
 		
 		$this->render("content", $vars);
 	}

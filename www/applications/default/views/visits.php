@@ -1,26 +1,19 @@
+<?php if(isset($alert)) { ?>
+	<script>
+		alert("<?php print $alert;?>");
+	</script>
+<?php } ?>
+
 <div id="home">
 	<span id="head-feedback">Libro de visitas</span>
 	<div id="visitas" class="scroll-pane">
-		<div class="visita">
-			<span class="name bold">Carlos Hugo Gonzalez Castell</span>
-			<span class="comment">"Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba"</span>
-			<span class="date">2 Agosto 2012</span>
-		</div>
-		<div class="visita">
-			<span class="name bold">Carlos Hugo Gonzalez Castell</span>
-			<span class="comment">"Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba"</span>
-			<span class="date">2 Agosto 2012</span>
-		</div>
-		<div class="visita">
-			<span class="name bold">Carlos Hugo Gonzalez Castell</span>
-			<span class="comment">"Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba"</span>
-			<span class="date">2 Agosto 2012</span>
-		</div>
-		<div class="visita">
-			<span class="name bold">Carlos Hugo Gonzalez Castell</span>
-			<span class="comment">"Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba Este es un comentario de prueba"</span>
-			<span class="date">2 Agosto 2012</span>
-		</div>
+		<?php foreach($visits as $visit) { ?>
+			<div class="visita">
+				<span class="name bold"><?php print $visit["Name"];?></span>
+				<span class="comment">"<?php print $visit["Comment"];?>"</span>
+				<span class="date"><?php print $visit["Text_Date"];?></span>
+			</div>
+		<?php } ?>
 	</div>
 </div>
 

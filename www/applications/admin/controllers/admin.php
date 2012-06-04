@@ -34,6 +34,15 @@ class Admin_Controller extends ZP_Controller {
 	}
 
 	public function events() {
+		if(!SESSION("ZanUser")) {
+			redirect(path() . "/admin");
+		}
+		
+		if(POST("send")) {
+			$this->Default_Model = $this->model("Default_Model");
+			$vars["alert"]       = $this->Default_Model->addEvent();
+		}
+		
 		$vars["view"] = $this->view("events", TRUE);
 		
 		$this->render("content", $vars);

@@ -31,10 +31,11 @@
 					<a class="brand" href="#">fllux.com</a>
 					
 					<ul class="nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<?php print (SESSION("ZanUser")) ? '<li><a href="' . path("logout"). '">Logout</a></li>' : NULL; ?>
+						<?php if(SESSION("ZanUser")) { ?>
+							<li class="active"><a href="<?php print path("");?>" target="_blank">Home</a></li>
+							<li><a href="<?php print path("admin/events");?>">Events</a></li>
+							<li><a href="<?php print path("logout");?>">Logout</a></li>
+						<?php } ?>
 					</ul>
 					
 					<?php if(!SESSION("ZanUser")) { ?>
