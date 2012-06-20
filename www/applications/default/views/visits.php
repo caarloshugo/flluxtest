@@ -31,7 +31,7 @@
 
 	<div id="menu-footer" class="margin-10">
 		<ul class="menu-footer">
-			<li class="footer-menu first li-comment">
+			<li class="footer-menu first li-comment addcommentli">
 				<a href="#" title="Agregar comentario" id="add-comment" onclick="return false;">+ Agregar comentario</a>
 			</li>
 			<li class="footer-menu"><a href="<?php print path("");?>" title="Visitas">Principal</a></li>

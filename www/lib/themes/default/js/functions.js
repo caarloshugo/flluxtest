@@ -1,4 +1,8 @@
 $(document).ready( function() {
+	$("#left-arrow").click( function() {
+		console.log(this);
+	});
+	
 	$("#home-past-events").hide();
 	$("#gallery-mini").hide();
 	
@@ -99,6 +103,7 @@ $(document).ready( function() {
 	var img = false;
 	
 	if (navigator.appCodeName == "Mozilla") {
+		
 		$('body').bind('DOMMouseScroll', function(e) {
 			if($('.first-image').hasClass('last-image') == true) {
 				$('.first-image').removeClass('first-image active-image');
