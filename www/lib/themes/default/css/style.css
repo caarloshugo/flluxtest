@@ -90,6 +90,7 @@ background-image:url('images/fondo.png'); }
 .return-events { float:left; color:#fff; font-size:15px; font-weight:bold; cursor:pointer; margin:20px 0 0 50px; }
 .return-events:hover { color:#ff9927; }
 .sc-gallery img { float:left; margin:5px 0 0 20px; border:1px solid #ff9927; cursor:pointer; }
+.sc-gallery img:hover { border:1px solid #fff; }
 .sc-gallery span { float:left; color:#fff; font-size:16px; margin:22px 0 0 26px; cursor:pointer; }
 .sc-gallery span:hover { color:#ff9927; }
 

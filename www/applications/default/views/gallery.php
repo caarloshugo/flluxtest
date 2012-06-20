@@ -1,7 +1,7 @@
 <div id="gallery-div">
 	<div id="home">
 		<div id="gallery">
-			<img class="first-image" rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+			<img class="first-image" rel="<?php print $this->themePath; ?>/css/images/gallery/actor_suicida.png" src="<?php print $this->themePath; ?>/css/images/thumb_actor_suicida.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
 			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
 			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
 			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
