@@ -1,16 +1,24 @@
+<?php $images    = glob("www/lib/themes/default/css/images/gallery/all/{*.gif,*.jpg,*.png,*.JPG}", GLOB_BRACE); ?>
+<?php $images_sc = glob("www/lib/themes/default/css/images/gallery/sc/{*.gif,*.jpg,*.png,*.JPG}", GLOB_BRACE); ?>
+
+<style>
+#menu-footer { margin-top: 20px !important;}
+</style>
 <div id="gallery-div">
 	<div id="home">
-		<div id="gallery">
-			<img class="first-image" rel="<?php print $this->themePath; ?>/css/images/gallery/actor_suicida.png" src="<?php print $this->themePath; ?>/css/images/thumb_actor_suicida.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-			<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-			<img class="last-image" rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<div id="gallery" class="scroll-pane">
+			<?php 
+				foreach($images as $key => $image) {
+					$url =  explode("/", $image);
+					
+					$all   = $this->themePath . '/css/images/gallery/all/'   . $url[8];
+					$thumb = $this->themePath . '/css/images/gallery/thumb/' . $url[8];
+					
+
+						echo '<img rel="'. $all . '" src="' . $thumb . '" alt="Imagen" title="Galeria de fotos"/>';
+					
+				} 
+			?>
 		</div>
 	</div>
 
@@ -37,16 +45,15 @@
 	<div id="right-arrow"></div>
 	
 	<div id="menu-footer" class="margin45 height70 sc-gallery">
-		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato3.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato3.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
-		<img rel="<?php print $this->themePath; ?>/css/images/autorretrato2.png" src="<?php print $this->themePath; ?>/css/images/sc_thumb_gallery.png" alt="Imagen" title="Imagen de la foto bellas artes 1"/>
+		<?php 
+			foreach($images_sc as $key => $image) {
+				$url =  explode("/", $image);
+				$all = $this->themePath . '/css/images/gallery/all/'   . $url[8];
+				$sc  = $this->themePath . '/css/images/gallery/sc/'    . $url[8];
+				
+				echo '<img rel="' . $all . '" src="' . $sc . '" alt="Imagenes de galeria" title="Imagenes de galeria"/>';
+			} 
+		?>
 		<span id="return-gallery">Regresar</span>
 	</div>
 </div>

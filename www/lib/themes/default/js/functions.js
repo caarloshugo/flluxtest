@@ -66,6 +66,7 @@ $(document).ready( function() {
 			$('#large-image').html('<img src="' + rel + '" alt="' + altImg + '" title="' + titleImg + '"/>');
 			$('#large-image').fadeIn();
 		});
+		
 	});
 	
 	$('#home').click( function() {
